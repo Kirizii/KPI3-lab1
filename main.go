@@ -1,4 +1,4 @@
-package KPI3_lab1
+package main
 
 import (
 	"encoding/json"
