@@ -17,9 +17,7 @@ func timeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// При зверенні на порт 8795 з endpoint /time, повертаємо нинішній час у вигляді YYYY-MM-DDTHH:MM:SSZ
+	// При зверенні на порт 8795 з endpoint /time, повертаємо нинішній час у вигляді YYYY-MM-DDTHH:MM:SSZ 
 	http.HandleFunc("/time", timeHandler)
 	http.ListenAndServe(":8795", nil)
 }
-
-// Some text
